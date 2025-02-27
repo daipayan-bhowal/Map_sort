@@ -27,6 +27,27 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 
 ---
 
+## Limitations
+- **Range Dependency:**
+The algorithm is inefficient for large ranges of values (k), as it requires iterating from minElement to maxElement.
+
+- **Time Complexity:**
+The time complexity is O(n log n + k log n), which can be inefficient for large datasets or wide ranges.
+
+- **Space Usage:**
+The space complexity depends on the range of values, making it unsuitable for datasets with a wide range of integers.
+
+- **Integer-Only:**
+The algorithm works only for integer values. It cannot handle floating-point numbers or other data types.
+
+---
+
+## Applications
+- **Small Datasets:** Ideal for sorting small datasets with a limited range of values.
+- **Educational Purposes:** Useful for understanding basic sorting algorithms and map-based data structures.
+
+---
+
 ## Pseudocode
 Below is the pseudocode for the Map Sort algorithm:
 
