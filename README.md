@@ -32,7 +32,7 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 The algorithm is inefficient for large ranges of values (k), as it requires iterating from minElement to maxElement.
 
 - **Time Complexity:**
-The time complexity is O(n log n + k log n), which can be inefficient for large datasets or wide ranges.
+The time complexity is O(n log n + k), which can be inefficient for large datasets or wide ranges.
 
 - **Space Usage:**
 The space complexity depends on the range of values, making it unsuitable for datasets with a wide range of integers.
