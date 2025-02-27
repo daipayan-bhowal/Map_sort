@@ -26,7 +26,7 @@ void Map_sort(vector<int> &nums)
     int j=0;
     for(int i=minElement; i<= maxElement; i++ )
     {
-        if (mp.find(i) != mp.end()) { 
+        if (mp[i] >= 1) { 
             for (int count = 0; count < mp[i]; count++) 
             { 
                 nums[j++] = i;
