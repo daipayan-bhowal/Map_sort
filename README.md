@@ -27,44 +27,31 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 
 ---
 
-## Code Implementation
-The algorithm is implemented in C++. Below is the code:
+## Pseudocode
+Below is the pseudocode for the Map Sort algorithm:
 
-```cpp
-#include <iostream>
-#include <vector>
-#include <map>
-#include <climits>
-using namespace std;
+```plaintext
+FUNCTION map_sort(nums):
+    // Step 1: Initialize variables
+    mp = empty map (key: integer, value: boolean)
+    maxElement = -∞
+    minElement = +∞
 
-void map_sort(vector<int> &nums) {
-    map<int, bool> mp;
-    int maxElement = INT_MIN;
-    int minElement = INT_MAX;
+    // Step 2: Find min and max elements in the input vector
+    FOR EACH num IN nums:
+        IF num > maxElement:
+            maxElement = num
+        IF num < minElement:
+            minElement = num
+        // Mark the presence of the element in the map
+        mp[num] = true
 
-    // Step 1: Find min and max elements and mark presence in the map
-    for (int num : nums) {
-        if (num > maxElement) maxElement = num;
-        if (num < minElement) minElement = num;
-        mp[num] = true;
-    }
+    // Step 3: Reconstruct the sorted array using the map
+    j = 0
+    FOR i = minElement TO maxElement:
+        IF mp[i] is true:
+            nums[j] = i
+            j = j + 1
 
-    // Step 2: Reconstruct the sorted array
-    int j = 0;
-    for (int i = minElement; i <= maxElement; i++) {
-        if (mp[i]) {
-            nums[j++] = i;
-        }
-    }
-}
-
-int main() {
-    vector<int> nums = {77, 55, 66, 44, 11, 89};
-    map_sort(nums);
-
-    // Print the sorted array
-    for (int num : nums) {
-        cout << num << " ";
-    }
-    return 0;
-}
+    // Step 4: The vector 'nums' is now sorted
+    RETURN
