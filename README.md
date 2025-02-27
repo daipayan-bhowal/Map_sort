@@ -17,6 +17,18 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 - **Efficient for Small Ranges:** Works well when the range of input values is small.
 - **Stable Sorting:** Maintains the relative order of equal elements.
 
+## How to Run the Code
+1. Ensure you have a C++ compiler installed (e.g., g++ or any IDE that supports C++).
+2. Download the Map_sort.cpp file from the repository.
+3. Open a terminal or command prompt.
+4. Navigate to the directory where Map_sort.cpp is located.
+5. Compile the code using the following command:
+   ```bash
+     g++ Map_sort.cpp -o MapSort
+6. Run the compiled program with:
+   ```bash
+    ./MapSort
+
 ---
 
 ## Time and Space Complexity
