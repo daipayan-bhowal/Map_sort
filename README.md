@@ -33,9 +33,9 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 
 ## Example Input and Output
 
-1. Input:
+- **Input:**
     nums = {77, 55, 66, 44, 11, 89};
-2. Output:
+- **Output:**
     11 44 55 66 77 89
 
 
