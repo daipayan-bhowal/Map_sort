@@ -36,9 +36,11 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 1. Input:
   ```bash  
     vector<int> nums = {77, 55, 66, 44, 11, 89};
+  ```bash
 2. Output:
   ```bash
     11 44 55 66 77 89
+  ```bash
 
 ---
 
