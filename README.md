@@ -17,6 +17,8 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 - **Efficient for Small Ranges:** Works well when the range of input values is small.
 - **Stable Sorting:** Maintains the relative order of equal elements.
 
+---
+
 ## How to Run the Code
 1. Ensure you have a C++ compiler installed (e.g., g++ or any IDE that supports C++).
 2. Download the Map_sort.cpp file from the repository.
@@ -28,6 +30,15 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 6. Run the compiled program with:
    ```bash
     ./MapSort
+
+## Example Input and Output
+
+Input:
+  ```cpp  
+   vector<int> nums = {77, 55, 66, 44, 11, 89};
+Output:
+  ```cpp
+   11 44 55 66 77 89
 
 ---
 
