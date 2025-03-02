@@ -41,7 +41,8 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 ---
 
 ## Time and Space Complexity
-- **Time Complexity:** O(n log n + k log k), where:
+- **Time Complexity:** O(n + k) (for array version) 
+                       O(n log n + k log k) (for std::map version), where:
   - `n` is the number of elements in the input array.
   - `k` is the range of values (`maxElement - minElement + 1`).
 - **Space Complexity:** O(k), where `k` is the range of values.
