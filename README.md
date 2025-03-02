@@ -49,6 +49,13 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 
 ---
 
+## Advantages
+
+- **Optimized for Larger Dataset:**
+The algorithm is faster than quicksort in case of large array size example:- if array has 1000 elements or more of 16 bit integers
+
+---
+
 ## Limitations
 - **Range Dependency:**
 The algorithm is inefficient for large ranges of values (k), as it requires iterating from minElement to maxElement.
