@@ -52,7 +52,7 @@ This algorithm is efficient for small ranges of integers but may not be suitable
 ## Advantages
 
 - **Optimized for Larger Dataset:**
-The algorithm is faster than quicksort in case of large array size example:- if array has 1000 elements or more of 16 bit integers
+The algorithm is faster than quicksort in case of large array size example:- if array has 1000 elements or more of 16 bit integers as Time complexity is O(n) instead of O(n log n) 
 
 ---
 
