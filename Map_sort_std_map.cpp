@@ -7,7 +7,7 @@ using namespace std;
 void Map_sort(vector<int> &nums)
 {
     vector<int> temp;
-    std::map<int,bool> mp;
+    std::map<int,int> mp;
     int maxElement = INT_MIN;
     int minElement = INT_MAX;
     for(int i=0; i<nums.size(); i++)
@@ -20,15 +20,17 @@ void Map_sort(vector<int> &nums)
         {
             minElement = nums[i];
         }
-        mp[nums[i]] = true;
+        mp[nums[i]]++;
         
     }
     int j=0;
     for(int i=minElement; i<= maxElement; i++ )
     {
-        if(mp[i])
-        {
-            nums[j++] = i;
+        if (mp[i] >= 1) { 
+            for (int count = 0; count < mp[i]; count++) 
+            { 
+                nums[j++] = i;
+            }
         }
     }
     
@@ -36,7 +38,7 @@ void Map_sort(vector<int> &nums)
 
 int main()
 {
-    vector<int> nums{77,55,66,44,11,89 };
+    vector<int> nums{77,55,66,44,11,44,11,89,89 };
     Map_sort(nums);
     for(auto &x: nums)
     {
@@ -44,4 +46,4 @@ int main()
     }
     
     return 0;
-} 
+}  
