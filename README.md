@@ -1,6 +1,6 @@
 # Map Sort Algorithm
 
-A non-comparison based sorting algorithm using hashmap datastructure (STL map)
+A non-comparison based sorting algorithm using hashmap datastructure
 
 ## Overview
 Map Sort is a simple sorting algorithm that uses a map (or hash map) to sort an array of integers. The algorithm works by:
