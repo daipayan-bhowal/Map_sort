@@ -75,7 +75,7 @@ The algorithm works only for integer values. It cannot handle floating-point num
 ---
 
 ## Applications
-- **Small Datasets:** Ideal for sorting small datasets with a limited range of values.
+- **Large Datasets:** Ideal for sorting large datasets with a limited range of values.
 - **Educational Purposes:** Useful for understanding basic sorting algorithms and map-based data structures.
 
 ---
