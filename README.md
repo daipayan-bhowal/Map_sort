@@ -10,6 +10,7 @@ Map Sort is a simple sorting algorithm that uses a map (or hash map) to sort an 
 
 This algorithm is efficient for small ranges of integers but may not be suitable for wide ranges(more than 16 bit integers) due to its space complexity.
 and also efficient for large datasets like 1000s of elements
+
 ---
 
 ## Features
