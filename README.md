@@ -8,7 +8,7 @@ Map Sort is a simple sorting algorithm that uses a map (or hash map) to sort an 
 2. Marking the presence of each element in a map.
 3. Reconstructing the sorted array by iterating from the minimum to the maximum element and checking the map for the presence of each element.
 
-This algorithm is efficient for small ranges of integers but may not be suitable for wide ranges(more than 16 bit integers) due to its space complexity.
+This algorithm is efficient for small ranges of integers but may not be suitable for wide ranges(more than 16 bit integers) due to its space complexity
 and also efficient for large datasets like 1000s of elements with comparision to QuickSort due to it's better timecomplexity of O(n+k)
 
 ---
