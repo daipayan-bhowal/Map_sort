@@ -61,7 +61,7 @@ The algorithm is faster than quicksort in case of large array size example:- if 
 
 ## Limitations
 - **Range Dependency:**
-The algorithm is inefficient for large ranges of values (k), as it requires iterating from minElement to maxElement.
+The algorithm is inefficient for Big Integers(greater than 16 bit ints), as it requires iterating from minElement to maxElement.
 
 - **Space Usage:**
 The space complexity depends on the range of values, making it unsuitable for datasets with a wide range of integers.
