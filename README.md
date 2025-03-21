@@ -15,7 +15,7 @@ and also efficient for large datasets like 1000s of elements with comparision to
 
 ## Features
 - **Simple Implementation:** Easy to understand and implement.
-- **Efficient for Small Ranges:** Works well when the range of input values is small.
+- **Efficient for Small Ranges:** Works well when the range of input values is small(16-bit integers).
 - **Stable Sorting:** Maintains the relative order of equal elements.
 
 ---
